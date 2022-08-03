@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        h1 {margin-bottom: 30px;}
+        label {font-weight: bold;}
+        input, select {margin-bottom: 10px;}
+        form {width: 30%; padding: 20px;}
+    </style>
+</head>
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm" style="background-color:lightgray; border: 2px solid orange">
+        <label for="employeeId">8-Digit Employee ID</label><br>
+        <input type="text" id="id" name="employeeId" maxLength="8" required><br>
+
+        <label for="fullName">Full Name</label><br>
+        <input type="text" id="name" name="fullName" required><br>
+
+        <label for="digitExtension">4-Digit Extension</label><br>
+        <input type="text" id="ext" name="digitExtension" maxLength="4" required><br>
+
+        <label for="emailAddress">Email</label><br>
+        <input type="email" id="email" name="emailAddress" required><br>
+
+        <label for="dpmt">Department</label><br>
+        <select name="dpmt" id="department" required>
+            <option value="administrative">Administrative</option>
+            <option value="engineering">Engineering</option>
+            <option value="executive">Executive</option>
+            <option value="marketing">Marketing</option>
+            <option value="qa">Quality Assurance</option>
+            <option value="sales">Sales</option>
+          </select><br><br>
+
+        <input type="submit" id="submit" value="Add Employee" onclick="formSubmit()" style="background-color: #247ff8; color: white; border-radius: 5px; padding: 5px; width: 8rem;">
+
+    </form>
+</body>
+</html>
